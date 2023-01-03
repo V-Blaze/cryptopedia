@@ -33,4 +33,6 @@ export const UK = ['bitstamp', 'coinmate', 'tidex'];
 
 export const US = ['binanceus', 'bittrex', 'gdax', 'gemini', 'itbit', 'kraken', 'poloniex'];
 
+export const otherCountries = ['bitfinex', 'whitebit', 'hitbtc', 'wazirx', 'therocktrading']
+
 
