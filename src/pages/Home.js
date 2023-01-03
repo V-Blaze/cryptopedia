@@ -16,6 +16,11 @@ const Home = () => {
     setCryptoExchanges(filtered);
   };
 
+  const handleSearch = (text) => {
+    const filteredExchanges = exchanges.filter((ex) => ex.name.toLowerCase().includes(text));
+    setCryptoExchanges(filteredExchanges);
+  };
+
   return (
     <div>
       <div>
@@ -24,7 +29,7 @@ const Home = () => {
         <span>Icons</span>
       </div>
       <div>
-        <input type="text" />
+        <input type="text" onChange={(e) => handleSearch(e.target.value)} />
         <form>
           {/* <label htmlFor="countries">Choose an countries:</label> */}
           <select id="countries" name="countries" onChange={(e) => handleSelection(e.target.value)}>

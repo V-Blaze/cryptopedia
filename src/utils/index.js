@@ -50,6 +50,7 @@ export const filterCountry = (country, exchanges) => {
       item = exchanges;
       break;
     default:
+      item = exchanges;
       break;
   }
 
