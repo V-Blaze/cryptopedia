@@ -1,11 +1,29 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import ExchangeLists from '../components/ExchangeLists';
 
-const Home = () => (
-  <div>
+const Home = () => {
+  const exchanges = useSelector((state) => state.exchanges);
+  return (
     <div>
-      <span>Home</span>
+      <div>
+        <span>Home</span>
+        <span>current Country</span>
+        <span>Icons</span>
+      </div>
+      <div>
+        <input type="text" />
+      </div>
+      <div>
+        {exchanges.map((exchange) => (
+          <ExchangeLists
+            key={exchange.exchangeId}
+            exchange={exchange}
+          />
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Home;

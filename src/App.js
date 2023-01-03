@@ -12,7 +12,7 @@ import { fetchExchanges } from './redux/Exchanges/exchange';
 const App = () => {
   // eslint-disable-next-line
   const dispatch = useDispatch();
-  // dispatch(fetchExchanges());
+  dispatch(fetchExchanges());
   return (
     <div className="relative sm:-8 p-4 bg-[#4369B2] min-h-screen flex flex-row">
       <Routes>
