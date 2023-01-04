@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import ExchangeLists from '../components/ExchangeLists';
 import { filterCountry } from '../utils';
 
 const Home = () => {
+  const navigate = useNavigate();
   const exchanges = useSelector((state) => state.exchanges);
   const [cryptoExchanges, setCryptoExchanges] = useState([]);
 
@@ -21,11 +23,16 @@ const Home = () => {
     setCryptoExchanges(filteredExchanges);
   };
 
+  const showDetails = (id) => {
+    const item = exchanges.filter((exchange) => exchange.exchangeId === id);
+    navigate('/details', { state: item[0] });
+  };
+
   return (
     <div>
       <div>
         <span>Home</span>
-        <span>current Country</span>
+        <span>CryptoPedia</span>
         <span>Icons</span>
       </div>
       <div>
@@ -55,6 +62,7 @@ const Home = () => {
           <ExchangeLists
             key={exchange.exchangeId}
             exchange={exchange}
+            showDetails={showDetails}
           />
         ))}
       </div>

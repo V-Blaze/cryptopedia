@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots 1`] = `
+<div>
+  <div>
+    <span>
+      Home
+    </span>
+    <span>
+      CryptoPedia
+    </span>
+    <span>
+      Icons
+    </span>
+  </div>
+  <div>
+    <input
+      onChange={[Function]}
+      type="text"
+    />
+    <form>
+      <select
+        id="countries"
+        name="countries"
+        onChange={[Function]}
+      >
+        <option
+          value="Select A Country"
+        >
+          Select A Country
+        </option>
+        <option
+          value="allCountries"
+        >
+          All Countries
+        </option>
+        <option
+          value="Australia"
+        >
+          Australia
+        </option>
+        <option
+          value="China"
+        >
+          China
+        </option>
+        <option
+          value="EU"
+        >
+          EU
+        </option>
+        <option
+          value="Indonesia"
+        >
+          Indonesia
+        </option>
+        <option
+          value="Japan"
+        >
+          Japan
+        </option>
+        <option
+          value="Russia"
+        >
+          Russia
+        </option>
+        <option
+          value="Seychelles"
+        >
+          Seychelles
+        </option>
+        <option
+          value="Singapore"
+        >
+          Singapore
+        </option>
+        <option
+          value="South_Korea"
+        >
+          South Korea
+        </option>
+        <option
+          value="UK"
+        >
+          UK
+        </option>
+        <option
+          value="US"
+        >
+          US
+        </option>
+        <option
+          value="otherCountries"
+        >
+          Other Countries
+        </option>
+      </select>
+    </form>
+  </div>
+  <div />
+</div>
+`;
