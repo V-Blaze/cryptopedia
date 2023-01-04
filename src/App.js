@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 // Pages
 import { Home, Details } from './pages';
+import Navbar from './components/Navbar';
 
 // Stylesheet
 import './App.css';
@@ -15,6 +16,9 @@ const App = () => {
   dispatch(fetchExchanges());
   return (
     <div className="relative sm:-8 p-4 bg-[#4369B2] min-h-screen flex flex-row">
+      <div>
+        <Navbar />
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/details" element={<Details />} />

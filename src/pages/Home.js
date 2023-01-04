@@ -31,9 +31,7 @@ const Home = () => {
   return (
     <div>
       <div>
-        <span>Home</span>
-        <span>CryptoPedia</span>
-        <span>Icons</span>
+        <span>Country</span>
       </div>
       <div>
         <input type="text" onChange={(e) => handleSearch(e.target.value)} />
@@ -65,6 +63,9 @@ const Home = () => {
             showDetails={showDetails}
           />
         ))}
+      </div>
+      <div>
+        <span>CryptoPedia Copywrite V-Blaze</span>
       </div>
     </div>
   );

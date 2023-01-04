@@ -24,7 +24,7 @@ test('testing the heading inside home component', async () => {
   renderWithProviders(
     <Router>
       <Home />
-    </Router>
+    </Router>,
   );
 
   // should show no user initially, and not be fetching a user

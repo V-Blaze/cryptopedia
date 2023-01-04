@@ -7,17 +7,16 @@ import store from '../redux/configureStore';
 import { Details } from '../pages';
 import renderWithProviders from '../redux/Exchanges/exchange-test-utils';
 
-
 const mockHistoryPush = jest.fn();
 jest.mock('react-router-dom', () => ({
-    ...jest.requireActual('react-router-dom'),
-    useHistory: () => ({
-        push: mockHistoryPush,
-    }),
-    useLocation: () => ({
-        pathname: "/details",
-        state: {name: 'Binance'}
-    })
+  ...jest.requireActual('react-router-dom'),
+  useHistory: () => ({
+    push: mockHistoryPush,
+  }),
+  useLocation: () => ({
+    pathname: '/details',
+    state: { name: 'Binance' },
+  }),
 }));
 
 it('snapshots', () => {
@@ -36,8 +35,8 @@ it('snapshots', () => {
 test('testing the heading inside home component', async () => {
   renderWithProviders(
     <BrowserRouter>
-        <Details />
-    </BrowserRouter>
+      <Details />
+    </BrowserRouter>,
   );
 
   // should show no user initially, and not be fetching a user
