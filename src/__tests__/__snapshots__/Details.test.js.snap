@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots 1`] = `
+<div>
+  <div>
+    <img
+      alt="logo"
+      src="https://logo.clearbit.com/undefined"
+    />
+    <div>
+      <span>
+        name:
+        Binance
+      </span>
+      <span>
+        rank
+      </span>
+    </div>
+  </div>
+  <div>
+    <h3>
+      Exchange Details
+    </h3>
+    <ul>
+      <li>
+        <span>
+          Trading Volum percent
+        </span>
+        <span>
+          %
+        </span>
+      </li>
+      <li>
+        <span>
+          Trading Volum USD
+        </span>
+        <span>
+          $
+        </span>
+      </li>
+      <li>
+        <span>
+          No. of Trading Pairs
+        </span>
+        <span />
+      </li>
+      <li>
+        <span>
+          Socket
+        </span>
+        <span />
+      </li>
+      <li>
+        <span>
+          Website
+        </span>
+        <span />
+      </li>
+      <li>
+        <span>
+          Exchange ID
+        </span>
+        <span />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
