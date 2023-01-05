@@ -30,4 +30,28 @@ code {
     monospace;
 }
 
-/* grid-template-columns: repeat(auto-fit,minmax(270px,1fr)) */
+.exchange-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 0.5rem;
+  padding: 0.3rem 0.5rem;
+}
+
+.hero-details {
+  background-image: url('./assets/crypto-exchange-bg.jpg');
+  height: 15rem;
+}
+
+.inner-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 15rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .exchange-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
