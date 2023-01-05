@@ -30,4 +30,16 @@ code {
     monospace;
 }
 
-/* grid-template-columns: repeat(auto-fit,minmax(270px,1fr)) */
+.exchange-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+  gap: 0.5rem;
+  padding: 0.3rem 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .exchange-container {
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  }
+  
+}

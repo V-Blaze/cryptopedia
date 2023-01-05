@@ -15,8 +15,8 @@ const App = () => {
   const dispatch = useDispatch();
   dispatch(fetchExchanges());
   return (
-    <div className="relative sm:-8 p-4 bg-[#4369B2] min-h-screen flex flex-row">
-      <div>
+    <div className="bg-[#4369B2] min-h-screen">
+      <div className="px-[5%]">
         <Navbar />
       </div>
       <Routes>
