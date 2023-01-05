@@ -11,7 +11,6 @@ const Home = () => {
 
   useEffect(() => {
     setCryptoExchanges(exchanges);
-    console.clear();
   }, [exchanges]);
 
   const handleSelection = (country) => {
@@ -28,6 +27,7 @@ const Home = () => {
   const showDetails = (id) => {
     const item = exchanges.filter((exchange) => exchange.exchangeId === id);
     navigate('/details', { state: item[0] });
+    console.clear();
   };
 
   return (
