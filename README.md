@@ -97,6 +97,10 @@
 
 - [Live Link](https://cryptopedia.onrender.com/)
 
+## 🚀 Video Presentation <a name="Presentation"></a>
+
+- [Video Presentation](https://drive.google.com/file/d/1skZyIHYgZXbFnHw9z0IRCgk83LRQHU5C/view?usp=sharing)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
