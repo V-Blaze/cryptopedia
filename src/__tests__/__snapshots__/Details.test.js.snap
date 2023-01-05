@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots 1`] = `
+<div>
+  <div
+    className="hero-details"
+  >
+    <div
+      className="inner-hero px-4"
+    >
+      <img
+        alt="logo"
+        className="w-20 h-20"
+        src="https://www.google.com/s2/favicons?sz=64&domain_url=undefined"
+      />
+      <div
+        className="text-2xl text-white flex flex-col gap-2"
+      >
+        <span
+          className=" font-semibold"
+        >
+          Name:
+          <span
+            className="ml-2 text-red-300 font-bold text-4xl"
+          >
+            Binance
+          </span>
+        </span>
+        <span
+          className=" font-semibold"
+        >
+          Rank:
+          <span
+            className="ml-2 text-red-300 font-bold text-4xl"
+          />
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className=" flex flex-col"
+  >
+    <h3
+      className="bg-gradient-to-r hover:bg-gradient-to-l from-sky-500 to-indigo-500 self-center text-3xl w-full text-center font-bold text-white py-2 rounded-b-lg"
+    >
+      Exchange Details
+    </h3>
+    <ul
+      className="flex flex-col p-5 gap-1 text-white font-semibold text-xl"
+    >
+      <li
+        className="flex justify-between bg-blue-800 py-3 rounded-md px-1"
+      >
+        <span>
+          Trading Volum percent
+        </span>
+        <span>
+          NaN
+          %
+        </span>
+      </li>
+      <li
+        className="flex justify-between bg-blue-900 py-3 rounded-md px-1"
+      >
+        <span>
+          Trading Volum USD:
+        </span>
+        <span>
+          $NaN
+        </span>
+      </li>
+      <li
+        className="flex justify-between bg-blue-800 py-3 rounded-md px-1"
+      >
+        <span>
+          No. of Trading Pairs
+        </span>
+        <span />
+      </li>
+      <li
+        className="flex justify-between bg-blue-900 py-3 rounded-md px-1"
+      >
+        <span>
+          Socket
+        </span>
+        <span />
+      </li>
+      <li
+        className="flex justify-between bg-blue-800 py-3 rounded-md px-1"
+      >
+        <span>
+          Website
+        </span>
+        <span />
+      </li>
+      <li
+        className="flex justify-between bg-blue-900 py-3 rounded-md px-1"
+      >
+        <span>
+          Exchange ID
+        </span>
+        <span />
+      </li>
+    </ul>
+  </div>
+</div>
+`;
