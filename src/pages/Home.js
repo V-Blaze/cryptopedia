@@ -11,6 +11,7 @@ const Home = () => {
 
   useEffect(() => {
     setCryptoExchanges(exchanges);
+    console.clear();
   }, [exchanges]);
 
   const handleSelection = (country) => {
@@ -19,7 +20,8 @@ const Home = () => {
   };
 
   const handleSearch = (text) => {
-    const filteredExchanges = exchanges.filter((ex) => ex.name.toLowerCase().includes(text));
+    const filteredExchanges = exchanges.filter((ex) => (
+      ex.name.toLowerCase().includes(text.toLowerCase())));
     setCryptoExchanges(filteredExchanges);
   };
 
@@ -70,7 +72,7 @@ const Home = () => {
           </form>
         </div>
       </div>
-      <div className="exchange-container">
+      <div className="exchange-container mb-9 ">
         {cryptoExchanges.map((exchange) => (
           <ExchangeLists
             key={exchange.exchangeId}
@@ -79,7 +81,7 @@ const Home = () => {
           />
         ))}
       </div>
-      <div>
+      <div className=" fixed bottom-0 mt-4 w-full bg-[#4369B2] h-9 flex justify-center items-center text-white text-xl">
         <span>CryptoPedia Copywrite V-Blaze</span>
       </div>
     </div>
